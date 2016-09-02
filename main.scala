@@ -3,8 +3,15 @@ object start{
 		val encryptedMessage = reader.readMessage
 
     printGreeting(encryptedMessage)
+    println("\nDo you want to attemp to decode the message? (Y/N)")
+    if(reader.readInput.toLowerCase == "y"){
+      decodeMessage
+    }else{
+      System.exit(0)
+    }
 	}
 
+  def decodeMessage = ???
   def printGreeting(encMsg: String): Unit ={
     val msg = "We have recieved a top secret message..."
     println(msg)
@@ -32,4 +39,10 @@ object reader{
 		
 		msg
 	}
+
+  def readInput: String = {
+    import java.util.Scanner
+    val scan = new Scanner(System.in)
+    scan.nextLine
+  }
 }
