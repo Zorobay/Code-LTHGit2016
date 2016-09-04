@@ -16,4 +16,8 @@ What you should do first is to click the `fork` button on this repo on Github.
 
 ## Harder tricks:
 
-* TODO
+These aren't recommended for beginners. If you want to learn about these please ask.
+
+* Branches. It's a bit like having multiple repos in the same repo, that you can compare and merge changes between. Or rather, repos are more like branches in different locations.
+* `git add -i` Interactive adding of changes. Lets you add only parts of files which makes it much easier to contain specific changes in a single commit.
+* `git cherry-pick` For grabbing a commit from some branch and applying on top of the current branch. Great for when you forget to branch or when you want a specific feature from another branch. This is amazing but doesn't always work the way you intend, especially with too broad commits.
