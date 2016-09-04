@@ -12,7 +12,8 @@ What you should do first is to click the `fork` button on this repo on Github.
 * `git push` uploads your changes to the default remote (repo) (see `git remote --help` for more info on that).
 * `git pull` to download changes in the repo.
 * `git stash` then `git pull` then `git stash pop` if you're in the middle of changing something but still want to pull.
+* `git diff` to show line changes you've made.
 
-## Harder commands:
+## Harder tricks:
 
 * TODO
