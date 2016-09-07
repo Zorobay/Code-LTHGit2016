@@ -12,3 +12,5 @@
 11. Push your edits and pull, then resolve the resulting merge conflict. Running the program should give you a message that is still garbled.
 12. For the last part have the person who didn't get to edit in step 6 go in and edit "crypt1.scala", specifically change the value of key in "val key = 0" to 11
 13. Recompiling and running the program should now give you the correct decrypted message!
+
+Hallihallå
