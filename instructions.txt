@@ -1,0 +1,14 @@
+1. Fork the repo to your own Github
+2. Add your partner as a collaborator or have your partner add you respectively
+3. Clone the repo to a chosen directory on your computer
+4. You can now edit and run the programs. Compile the program by typing "scalac *.scala"
+5. Run the program by typing "scala start". You should receive an error message telling you to unclog the system, we will do this by editing one of the .scala files.
+6. Let either you or your partner edit the file titled "plunger.scala" and change the word "false" to "true"
+7. Recompiling the program and running it should now successfully decrypt the message although you won't be shown it yet.
+8. Try pushing your changes to the github repo. The order of commands are: "git add -A", "git commit -m "[some message]"", "git push origin master"
+(Remember you can use "git status" to check the status of your repo at any time)
+9. Have your partner fetch the changes to their computer by typing "git pull origin master".
+10. For the next part both you and your partner should edit the file "crypt2.scala", each person changes one of the zeros to the value 21.
+11. Push your edits and pull, then resolve the resulting merge conflict
+12. For the last part have the person who didn't get to edit in step 6 go in and edit "crypt1.scala", specifically change the value of key in "val key = 0" to 61
+13. Recompiling and running the program should now give you the correct decrypted message!
