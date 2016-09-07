@@ -1,8 +1,5 @@
 # Code-LTHGit2016
 
-
-change here...
-
 What you should do first is to click the `fork` button on this repo on Github.
 
 ## Common commands:
