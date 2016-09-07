@@ -9,6 +9,6 @@
 (Remember you can use "git status" to check the status of your repo at any time)
 9. Have your partner fetch the changes to their computer by typing "git pull origin master".
 10. For the next part both you and your partner should edit the file "crypt2.scala", each person changes one of the zeros to the value 21.
-11. Push your edits and pull, then resolve the resulting merge conflict
-12. For the last part have the person who didn't get to edit in step 6 go in and edit "crypt1.scala", specifically change the value of key in "val key = 0" to 61
+11. Push your edits and pull, then resolve the resulting merge conflict. Running the program should give you a message that is still garbled.
+12. For the last part have the person who didn't get to edit in step 6 go in and edit "crypt1.scala", specifically change the value of key in "val key = 0" to 11
 13. Recompiling and running the program should now give you the correct decrypted message!
