@@ -4,22 +4,34 @@ object start{
 
     printGreeting(encryptedMessage)
     println("\nDo you want to attemp to decode the message? (Y/N)")
+    var decodedMsg = ""
     if(reader.readInput.toLowerCase == "y"){
-      decodeMessage(encryptedMessage)
+      if(!plunger.unclogPipes){
+        println("Decryption systems are clogged up! Please do maintenance.")
+        println("Shutting down...")
+        System.exit(0)
+      }
+      decodedMsg = decodeMessage(encryptedMessage)
     }else{
       System.exit(0)
     }
+    if(!crypt2.doubleUnlock(42)){
+      println("doubleUnlock security test not passed, access to decrypted message denied!")
+    } else {
+      println("Access to decrypted message granted! The message is:")
+      println(decodedMsg)
+    }
 	}
 
-  def decodeMessage(encMsg: String): Unit = {
+  def decodeMessage(encMsg: String): String = {
     print("Decrypting")
     for(a <- 1 to 10){
       Thread.sleep(30)
       print(".")
     }
     println()
-    println("Decryption complete! Retrieved message is:")
-    println(crypt1.encrypt(encMsg))
+    println("Decryption complete!")
+    crypt1.encrypt(encMsg)
   }
 
   def printGreeting(encMsg: String): Unit ={
@@ -30,7 +42,7 @@ object start{
 
     for(i <- 1 to 5){
       print(".")
-      Thread.sleep(1000)
+      Thread.sleep(500)
     }
 
     print("\nIncoming message: " + encMsg)
