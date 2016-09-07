@@ -5,13 +5,23 @@ object start{
     printGreeting(encryptedMessage)
     println("\nDo you want to attemp to decode the message? (Y/N)")
     if(reader.readInput.toLowerCase == "y"){
-      decodeMessage
+      decodeMessage(encryptedMessage)
     }else{
       System.exit(0)
     }
 	}
 
-  def decodeMessage = ???
+  def decodeMessage(encMsg: String): Unit = {
+    print("Decrypting")
+    for(a <- 1 to 10){
+      Thread.sleep(30)
+      print(".")
+    }
+    println()
+    println("Decryption complete! Retrieved message is:")
+    println(crypt1.encrypt(encMsg))
+  }
+
   def printGreeting(encMsg: String): Unit ={
     val msg = "We have recieved a top secret message..."
     println(msg)
