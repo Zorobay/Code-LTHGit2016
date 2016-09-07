@@ -2,8 +2,9 @@
 
 What you should do first is to click the `fork` button on this repo on Github.
 
+This is a line that I'm changing just because.
 ## Common commands:
-
+jfdsjklfdsajkl;fdsjakl;
 * `git clone https://github.com/YourGithubUsername/Code-LTHGit2016.git` to clone this entire repo (your fork) into a directory on your computer.
 * `git status` to check how badly things are going. If you don't know what command to run, run this one.
 * `git add .` (note the period) adds all changed files to the "index", making them ready to be committed.
